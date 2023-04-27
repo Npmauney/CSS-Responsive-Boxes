@@ -1,3 +1,58 @@
 body {
   background: blanchedalmond;
+  margin: 1em;
 }
+* {
+  border: 1px solid black;
+}
+
+.container {
+  display:flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a {
+  flex-grow: 1;
+  
+  align-items: center;
+  text-align: center;
+}
+
+.b {
+  align-items: center;
+  text-align: center;
+  flex-grow: 3;
+}
+
+.c {
+  
+  text-align: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+    padding: 8rem;
+    align-items: center;
+    text-align: center;
+  }
+  .b {
+    padding: 10rem;
+    align-items: center;
+    text-align: center;
+  }
+  .c {
+    padding: 10rem;
+    text-align: center;
+    align-items: center;
+
+  }
+}                                
